@@ -1,0 +1,13 @@
+version: "3.5"
+
+services:
+
+  resources:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      PORT: 8080
+      SERVICE_NAME: ads-service
+      SERVICE_SECRET: UL9wXasgy4Wf
+      DATABASE_NAME: ads-service-db
