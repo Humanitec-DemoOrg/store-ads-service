@@ -9,5 +9,5 @@ services:
     environment:
       PORT: 8080
       SERVICE_NAME: ads-service
-      SERVICE_SECRET: UL9wXasgy4Wf
+      SERVICE_SECRET: dummy-secret
       DATABASE_NAME: ads-service-db
