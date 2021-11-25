@@ -54,4 +54,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ env.GCP_REGISTRY }}/${{ env.GCP_PROJECT }}/${{ env.IMAGE_NAME }}:${{ steps.get_version.outputs.VERSION }}
+          tags: |
+            ${{ env.GCP_REGISTRY }}/${{ env.GCP_PROJECT }}/${{ env.IMAGE_NAME }}:latest
+            ${{ env.GCP_REGISTRY }}/${{ env.GCP_PROJECT }}/${{ env.IMAGE_NAME }}:${{ steps.get_version.outputs.VERSION }}
